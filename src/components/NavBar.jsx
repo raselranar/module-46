@@ -2,6 +2,7 @@ import UserIcon from "@/assets/user.png";
 import { Button } from "@heroui/react";
 import Image from "next/image";
 import Link from "next/link";
+import NavLink from "./UI/NavLink";
 
 const NavBar = () => {
   return (
@@ -10,13 +11,13 @@ const NavBar = () => {
         <div className=""></div>
         <ul className="flex items-center gap-4 *:text-gray-500">
           <li>
-            <Link href="#">Home</Link>
+            <NavLink href="/news">Home</NavLink>
           </li>
           <li>
-            <Link href="#">About</Link>
+            <Link href="/about">About</Link>
           </li>
           <li>
-            <Link href="#">Career</Link>
+            <Link href="/career">Career</Link>
           </li>
         </ul>
         {/* end */}
