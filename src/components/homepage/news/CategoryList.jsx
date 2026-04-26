@@ -1,3 +1,5 @@
+import NavLink from "@/components/UI/NavLink";
+
 const CategoryList = ({ categories }) => {
   return (
     <div className="">
@@ -7,7 +9,9 @@ const CategoryList = ({ categories }) => {
           <li
             className="text-gray-500/80 hover:bg-accent-hover hover:text-accent-foreground px-4 py-2 rounded font-medium"
             key={item.category_id}>
-            {item.category_name}
+            <NavLink href={`/category/${item.category_id}`}>
+              {item.category_name}
+            </NavLink>
           </li>
         ))}
       </ul>
